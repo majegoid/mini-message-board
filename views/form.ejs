@@ -1,12 +1,14 @@
 <%- include('layout/header'); -%>
-<h1><%= title %></h1>
-<p>Post a message</p>
+<div class="page">
+  <h1><%= title %></h1>
+  <p>Post a message</p>
 
-<form method="POST" action="/new">
-  <label for="name">Name</label>
-  <input type="text" id="name" name="name" placeholder="Name" />
-  <label for="text">Text</label>
-  <input type="text" id="text" name="text" placeholder="Enter Message Text" />
-  <button type="submit">Submit</button>
-</form>
+  <form method="POST" action="/new">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Name" />
+    <label for="text">Text</label>
+    <input type="text" id="text" name="text" placeholder="Enter Message Text" />
+    <button type="submit">Submit</button>
+  </form>
+</div>
 <%- include('layout/footer'); -%>
