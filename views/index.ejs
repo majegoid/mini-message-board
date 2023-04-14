@@ -1,0 +1,14 @@
+<%- include('layout/header'); -%>
+<h1><%= title %></h1>
+<p>Welcome to <%= title %></p>
+
+<ul>
+  <% messages.forEach(function(message){ %>
+  <li>
+    <span class="message-username"><%=message.user%></span>
+    <span class="message-date"><%=message.dateString%>:</span>
+    <p><%=message.text%></p>
+  </li>
+  <% }); %>
+</ul>
+<%- include('layout/footer'); -%>
