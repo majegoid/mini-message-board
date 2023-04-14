@@ -1,8 +1,88 @@
+:root {
+  font: 16px 'Lucida Grande', Helvetica, Arial, sans-serif;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+html,
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  margin: auto;
+  background-color: #333;
+  color: white;
 }
 
 a {
-  color: #00B7FF;
+  text-decoration: none;
+  color: white;
+}
+
+ul,
+li {
+  list-style-type: none;
+}
+
+nav {
+  background-color: #555;
+}
+nav span,
+nav a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 1rem;
+  background-color: #555;
+}
+nav span:hover,
+nav a:hover {
+  cursor: pointer;
+  background-color: #777;
+}
+
+.page {
+  margin: auto;
+  padding-top: 1rem;
+  max-width: 1280px;
+}
+.page > h1,
+.page > p {
+  padding-bottom: 1rem;
+}
+
+ul {
+  display: block;
+  padding: 1rem;
+  background-color: #555;
+}
+ul li {
+  display: block;
+  margin-bottom: 1rem;
+  padding: 0.25rem;
+
+  background-color: #555;
+}
+ul li:last-of-type {
+  margin-bottom: 0rem;
+}
+ul li:hover {
+  cursor: pointer;
+  background-color: #777;
+}
+
+.message {
+  margin-bottom: 0.5rem;
+}
+.message-username {
+  font-weight: bold;
+}
+.message-date {
+  color: #aaa;
 }
